@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     }
 
     Client client("MyLocalServer");
-    client.sendMessage(message);
+    client.setMessage(message);    // اول پیام رو set کن
+    client.connectToServer();      // بعد connect کن
 
     return app.exec();
-}
